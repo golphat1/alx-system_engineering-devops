@@ -1,1 +1,1 @@
-srcipt that list all the files in the current and parent directory
+script that list all files in the current and parent working directory
