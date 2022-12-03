@@ -1,1 +1,1 @@
-script that creates symbolic link
+script that moves all files beginning with upper case
