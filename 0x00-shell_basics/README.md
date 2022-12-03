@@ -1,1 +1,1 @@
-script that create symbolic link
+script that creates symbolic link
