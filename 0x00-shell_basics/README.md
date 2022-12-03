@@ -1,1 +1,1 @@
-script that deletes files
+script that list files and directoris separated by commas
