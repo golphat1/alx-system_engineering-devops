@@ -1,1 +1,1 @@
-script that displays contents of your working directory
+script that displays list contents of your directory
