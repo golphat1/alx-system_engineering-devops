@@ -1,1 +1,1 @@
-script that list all files in the current and parent working directory
+script that prints the file type named
