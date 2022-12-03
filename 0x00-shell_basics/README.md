@@ -1,1 +1,1 @@
-script display long format, user and group IDs and hidden files
+script that creates a directory in the directory
