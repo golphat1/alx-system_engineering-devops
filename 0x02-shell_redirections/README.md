@@ -1,4 +1,1 @@
-0-hello_world
-hello world
-hello world
-hello world
+# Shell, I/O Redirections and filters
