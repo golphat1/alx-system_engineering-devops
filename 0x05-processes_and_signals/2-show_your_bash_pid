@@ -2,4 +2,4 @@
 # A script that displays line containg the bash word.
 # Shellcheck disable=SC2009
 
-./1-list_your_processes | grep "bash"
+ps -a -x -u -f | grep "bash"
