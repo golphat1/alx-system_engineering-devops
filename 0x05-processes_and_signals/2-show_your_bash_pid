@@ -2,4 +2,4 @@
 # A script that displays line containg the bash word.
 # Shellcheck disable=SC2009
 
-ps aux | grep "bash"
+ps auxf | grep "bash"
