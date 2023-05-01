@@ -1,6 +1,5 @@
 #!usr/bin/env bash
 # A script that displays line containg the bash word.
-# Do not use pgrep
 # Shellcheck disable=SC2009
 
-ps auxf | grep "bash"
+ps aux | grep "bash"
