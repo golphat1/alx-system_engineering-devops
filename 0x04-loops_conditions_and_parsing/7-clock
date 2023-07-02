@@ -5,7 +5,7 @@
 # use the while loop display the first 70 lines using the head command.
 
 i="0"
-while [ $i -le 12]
+while [ $i -le 12 ]
 do
 	echo "hour: $i"
 	j="1"

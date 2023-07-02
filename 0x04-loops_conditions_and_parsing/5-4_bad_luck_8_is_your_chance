@@ -5,18 +5,17 @@
 # displays Best School for the other iterations
 # use while loop, if, elif and else statements
 
-count=0
-
-while [ $count -lt 10 ]
+i="0"
+while [ $i -lt 10 ]
 do
-	if [ $ -eq 3 ];
-	then
-	 echo "bad luck"
-	elif [ $count -eq 7 ];
-	then
-	 echo "good luck"
-	else
-	 echo "Best School"
-	fi
-	 (( count++ ))
+if [ $i -eq 3 ];
+then
+    echo "bad luck"
+elif [ $i -eq 7 ];
+then
+    echo "good luck"
+else
+    echo "Best School"
+fi
+i=$((i+1))
 done
