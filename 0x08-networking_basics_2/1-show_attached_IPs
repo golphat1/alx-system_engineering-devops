@@ -1,3 +1,9 @@
 #!/usr/bin/env bash
 # A script that Shows attached IPs
-ifconfig | grep -Eo "inet (addr:)?([0-9]*\.){3}[0-9]*" | cut -b 11-
+# Retrieve all active IPv4 addresses using the 'ip' command
+ipv4_addresses=$(ip -4 addr show | grep -oP '(?<=inet\s)\d+(\.\d+){3}')
+
+# Loop through each IP address and display them
+for ip_address in $ipv4_addresses; do
+  echo "$ip_address"
+done
