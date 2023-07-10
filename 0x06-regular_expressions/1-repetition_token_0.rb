@@ -1,2 +1,3 @@
 #!/usr/bin/env ruby
-pattern = /^(https?:\/\/)?(www\.)?[a-z0-9]+\.[a-z]+(\/[^\s]*)?$/
+# Find the regular expression that will match
+puts ARGV[0].scan(/hbt{2,5}n/).join
