@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-# A script Port listening on localhost
-nc -lk localhost 98
