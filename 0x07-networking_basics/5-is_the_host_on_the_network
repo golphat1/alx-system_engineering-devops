@@ -1,13 +1,9 @@
 #!/usr/bin/env bash
 
 # Check if the host is on  network
-if [ $# -ne 1 ]; then
-  echo "Usage: $0 {IP_ADDRESS}"
-  exit 1
+if [ "$#" -lt "1" ]
+then
+    echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
+else
+    ping "$1" -c 5
 fi
-
-# Gets IP address from the command line argument
-ip_address="$1"
-
-# Pings IP address 5 times and display the results
-ping -c 5 "$ip_address"
