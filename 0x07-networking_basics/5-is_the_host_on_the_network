@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Checks if the host reacheable on the network
+# Checks if the host reacheable
 if [ $# -ne 1 ]
 then
     echo "Usage: 5-is_the_host_on_the_network {IP_ADDRESS}"
