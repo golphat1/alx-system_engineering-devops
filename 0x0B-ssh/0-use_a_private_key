@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#The following script takes in a user with
+#Private key to my remote server
+ssh -i ~/.ssh/school ubuntu@100.26.219.4
