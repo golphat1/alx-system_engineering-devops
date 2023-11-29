@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+#installing nginx on my web-01
+#update the package and the install
+apt-get update -y
+apt-get install nginx -y
+# returns an index.html file with "Hello World!" content using redirection
+sudo tee /var/www/html/index.html > /dev/null <<EOF
+Hello World!
+EOF
+# Restart Nginx using the init.d script
+sudo /etc/init.d/nginx restart
+#success message
+echo "Nginx setup completed."
