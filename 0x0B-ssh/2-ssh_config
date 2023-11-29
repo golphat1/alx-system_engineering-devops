@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-# SSH client configuration
-# configured to use the private key ~/.ssh/school
-# configured to refuse to authenticate using a password
-Host *
-      PasswordAuthentication no
-      IdentifyFile ~/.ssh/school
