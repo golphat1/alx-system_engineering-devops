@@ -1,6 +1,4 @@
 #!/usr/bin/env bash
 # Dugging code
-# Starting Apache service in the background
-apache2-foreground &
-# Keep the script running to prevent the container from exiting
-tail -f /dev/null
+# Starting Apache2 inside docker
+service apache2 start
