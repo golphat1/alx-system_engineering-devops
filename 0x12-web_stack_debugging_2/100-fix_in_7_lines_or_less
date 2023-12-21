@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Script that runs nginx as nginx and fixing port from 80 to 8080
+useradd -r nginx
+sed -i 's/^user .*/user nginx;/' /etc/nginx/nginx.conf
+service nginx restart
+ps auxff | grep '[n]ginx'
+nc -z 0 8080

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Script that runs the whoami command on the the first argument passed
+sudo -u "$1" whoami
