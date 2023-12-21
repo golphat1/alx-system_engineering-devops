@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# 0-nginx_likes_port_80
+# Install Nginx if it's not already installed
+
+sudo ln -sf /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
+sudo service nginx restart
