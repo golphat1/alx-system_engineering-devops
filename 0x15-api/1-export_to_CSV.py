@@ -26,9 +26,6 @@ if __name__ == '__main__':
     employee_data = employee_response.json()
     employee_username = employee_name_response.json()['username']
 
-    total_completed_tasks = sum(1 for task in employee_data
-                                if task['completed'])
-
     csv_filename = f'{employee_id}.csv'
 
     with open(csv_filename, 'w', newline='') as csv_file:
@@ -42,7 +39,7 @@ if __name__ == '__main__':
             task_title = task['title']
             csv_writer.writerow([employee_id,
                                  employee_username,
-                                 task_completed_status,
+                                 str(task_completed_status),
                                  task_title])
 
     print(f"Data exported to {csv_filename}.")
